@@ -1,6 +1,6 @@
-require "aws-s3-deploy/version"
+require "emblaze/version"
 
-module AwsS3Deploy
+module Emblaze
   class << self
     def local_dir; './_site'; end
 

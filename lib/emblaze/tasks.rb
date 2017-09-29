@@ -1,6 +1,6 @@
-require "aws-s3-deploy/aws-s3-deploy"
+require "emblaze/emblaze"
 
-module AwsS3Deploy
+module Emblaze
   class << self
     include Rake::DSL if defined? Rake::DSL
 
@@ -63,4 +63,4 @@ module AwsS3Deploy
   end
 end
 
-AwsS3Deploy.install_tasks
+Emblaze.install_tasks

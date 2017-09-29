@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "aws-s3-deploy/version"
+require "emblaze/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "aws-s3-deploy"
-  spec.version       = AwsS3Deploy::VERSION
+  spec.name          = "emblaze"
+  spec.version       = Emblaze::VERSION
   spec.authors       = ["Arda Karaduman"]
   spec.email         = ["akaraduman@gmail.com"]
 
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   AWS_SECRET_KEY
   AWS_ACCESS_KEY
   }
-  spec.homepage      = "https://github.com/c0ze/aws-s3-deploy"
+  spec.homepage      = "https://github.com/c0ze/emblaze"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
