@@ -1,4 +1,4 @@
-require "aws-s3-deploy/version"
+require "aws-s3-deploy/aws-s3-deploy"
 
 module AwsS3Deploy
   class << self
@@ -8,6 +8,7 @@ module AwsS3Deploy
       desc "Deploy via S3"
       task :s3 do
 
+        Dotenv.load
         page = s3.list_objects(bucket: bucket_name)
 
         p "deleting content"
