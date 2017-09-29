@@ -1,9 +1,9 @@
 require "aws-s3-deploy/version"
 
 module AwsS3Deploy
-  include Rake::DSL if defined? Rake::DSL
-
   class << self
+    include Rake::DSL if defined? Rake::DSL
+
     def install_tasks
       desc "Deploy via S3"
       task :s3 do
