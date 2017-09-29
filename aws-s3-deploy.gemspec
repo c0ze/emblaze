@@ -5,7 +5,7 @@ require "aws-s3-deploy/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "aws-s3-deploy"
-  spec.version       = Aws::S3::Deploy::VERSION
+  spec.version       = AwsS3Deploy::VERSION
   spec.authors       = ["Arda Karaduman"]
   spec.email         = ["akaraduman@gmail.com"]
 
