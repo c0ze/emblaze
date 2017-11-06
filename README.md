@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Add this to your Gemfile :
+Add this to your Rakefile :
 
     require "emblaze/tasks"
 
